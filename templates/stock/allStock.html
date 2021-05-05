@@ -45,7 +45,7 @@
              <th class="border-0">ID</th>
              <th class="border-0">Device Name</th>
              <th class="border-0">Serial Number</th>
-             <th class="border-0">Date Created</th>
+{#             <th class="border-0">Date Created</th>#}
              <th class="border-0">Code</th>
              <th class="border-0">Status</th>
              <th class="border-0">Category</th>
@@ -59,12 +59,12 @@
                  <td>{{ stock.id }}</td>
                  <td>{{ stock.name }}</td>
                  <td>{{ stock.serialNumber }}</td>
-                 <td>{{ stock.date_created }}</td>
+{#                 <td>{{ stock.date_created }}</td>#}
                  <td>{{ stock.code }}</td>
                  <td>{{ stock.availability }}</td>
                  <td>{{ stock.category }}</td>
                  <td><a class="btn btn-sm btn-info" href="{% url 'updatestock'  stock.id %}">Update</a></td>
-                 <td><a class="btn btn-sm btn-warning" href="{% url 'deletestock' stock.id %}">Remove</a></td>
+                 <td><a class="btn btn-sm btn-danger" href="{% url 'deletestock' stock.id %}">Remove</a></td>
 
             </tr>
          {% endfor %}

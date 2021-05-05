@@ -36,7 +36,7 @@
              <th class="border-0">Device</th>
              <th class="border-0">Status</th>
              <th class="border-0">Description</th>
-             <th class="border-0">Date</th>
+{#             <th class="border-0">Date</th>#}
              <th class="border-0">Person</th>
              <th class="border-0">Title</th>
              <th class="border-0">Address</th>
@@ -51,12 +51,12 @@
                  <td>{{ form.device }}</td>
                  <td>{{ form.status }}</td>
                  <td>{{ form.description }}</td>
-                 <td>{{ form.date_created }}</td>
+{#                 <td>{{ form.date_created }}</td>#}
                  <td>{{ form.person }}</td>
                  <td>{{ form.title }}</td>
                  <td>{{ form.address }}</td>
                  <td><a class="btn btn-sm btn-info" href="{% url 'updateitem'  form.id %}">Update</a></td>
-                 <td><a class="btn btn-sm btn-warning" href="{% url 'deleteitem' form.id %}">Remove</a></td>
+                 <td><a class="btn btn-sm btn-danger" href="{% url 'deleteitem' form.id %}">Remove</a></td>
 
             </tr>
          {% endfor %}
